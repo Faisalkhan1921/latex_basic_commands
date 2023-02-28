@@ -1,0 +1,109 @@
+syntax
+
+\ means a code
+\today //date current or system data
+\preamble //space between two lines
+\textbf{commands} //bold the word
+\emph{italic}
+
+\document {report} //you are going to produce which kind of doc eg article book
+//spcae between two lines is know as preamble
+\setlength{\noindent}{0.2cm}
+\begin {dcumet}
+
+
+
+
+
+
+
+
+\end document
+
+
+------------lipsum usage and implementation-------------------
+
+\documentclass{article}
+\usepackage{lipsum}
+
+\begin{document}
+    
+    \section{Introduction}
+    \lipsum[1-2]
+    
+    \section{Methodology}
+    \lipsum[3-4]
+    
+    \section{Results}
+    \lipsum[5-6]
+    
+    \section{Conclusion}
+    \lipsum[7-8]
+    
+\end{document}
+
+
+--------indent commnad-----------
+\documentclass{article}
+
+\begin{document}
+
+This is the first line of text in the paragraph.
+
+\indent This is the second line of text in the paragraph, which is indented.
+
+This is the third line of text in the paragraph.
+
+\end{document}
+
+
+-------DOBLE FORWARD SLASH-------------
+break the line
+\indent A quick brown fox jumps over the lazy dog \\  \indent \lipsum[2]
+
+
+----double quotes--------
+``This is a double-quoted text.''
+
+or use the package
+\usepackage{csquotes}
+\enquote{This is a double-quoted text.}
+
+
+
+-------------sigle dash/doble dash---------------------
+
+
+
+
+-------------backslash-------------
+To produce a backslash in LaTeX, use the command \textbackslash.
+
+----------% print----------------
+Still I have learnt only 1\% of \LaTeX{}
+
+------------use multi line comment-------------
+\usepackage{comment}
+\begin{comment}
+This is a multiple-line comment.
+It can span several lines and can contain any text.
+\end{comment}
+
+----------single line comment-------------
+This is some text. % This is a comment that will be ignored by LaTeX.
+
+
+------------space in vertial---------------
+\vspace{2cm}
+
+
+
+-----------Font Family--------------------
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\section{\sffamily\bfseries My Section Heading in Arial}
+
+
+
+
